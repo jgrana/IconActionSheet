@@ -51,6 +51,4 @@
 - (void)showInView:(UIView *)view;
 - (void)dismissView;
 
-- (NSUInteger)buttonCount;
-
 @end
