@@ -22,4 +22,4 @@ By default a cancel button is added to the view. A title can be specified for th
     } atIndex:-1];    
     [sheet showInView:self.view];
 
- [1]: http://i.imgur.com/9JyLS.png "IconActionSheetDemo Screenshot"
+ [1]: http://i.imgur.com/SPDXc.png "IconActionSheetDemo Screenshot"
