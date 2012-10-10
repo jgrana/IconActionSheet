@@ -155,9 +155,7 @@ static NSString *cellIdentifier = @"ActionCell";
     [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:button];
-    _height += button.frame.size.height + kActionSheetBorder;
-    _height += (kActionSheetBorder * 2);
-    
+    _height += button.frame.size.height + kActionSheetBorder;    
     
     UIImageView *modalBackground = [[UIImageView alloc] initWithFrame:self.bounds];
     modalBackground.image = background;
@@ -167,7 +165,7 @@ static NSString *cellIdentifier = @"ActionCell";
     [parentView addSubview:self];
     
     CGRect frame = self.frame;
-    frame.origin.y = [[UIApplication sharedApplication] keyWindow].bounds.size.height;
+    frame.origin.y = parentView.frame.size.height;
     frame.size.height = _height + kActionSheetBounce;
     self.frame = frame;
     

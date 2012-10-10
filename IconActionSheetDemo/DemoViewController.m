@@ -45,7 +45,7 @@
         label.text = @"You selected the message icon!";
         [sheet dismissView];
     } atIndex:-1];
-    [sheet addIconWithTitle:@"Camerea" image:[UIImage imageNamed:@"Camera.png"] block:^{
+    [sheet addIconWithTitle:@"Camera" image:[UIImage imageNamed:@"Camera.png"] block:^{
         label.text = @"You selected the camera icon!";
         [sheet dismissView];
     } atIndex:-1];
