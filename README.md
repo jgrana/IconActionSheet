@@ -22,4 +22,4 @@ IconActionSheet *sheet = [IconActionSheet sheetWithTitle:@"Icon Action Sheet Dem
     } atIndex:-1];    
 [sheet showInView:self.view];
 
- [1]: http://imgur.com/oBN3U "IconActionSheetDemo"
+ [1]: http://i.imgur.com/oBN3U.png "IconActionSheetDemo Screenshot"
