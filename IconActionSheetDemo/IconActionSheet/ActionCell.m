@@ -21,7 +21,7 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        self.label = [[UILabel alloc] initWithFrame:CGRectMake(5, 62, 60, 18)];
+        self.label = [[UILabel alloc] initWithFrame:CGRectMake(0, 62, 70, 18)];
         self.label.textColor = [UIColor whiteColor];
         self.label.backgroundColor = [UIColor clearColor];
         self.label.textAlignment = NSTextAlignmentCenter;

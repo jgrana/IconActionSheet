@@ -41,7 +41,7 @@
         label.text = @"You selected the settings icon!";
         [sheet dismissView];
     } atIndex:-1];
-    [sheet addIconWithTitle:@"Contacts" image:[UIImage imageNamed:@"iMessage.png"] block:^{
+    [sheet addIconWithTitle:@"iMessage" image:[UIImage imageNamed:@"iMessage.png"] block:^{
         label.text = @"You selected the message icon!";
         [sheet dismissView];
     } atIndex:-1];
