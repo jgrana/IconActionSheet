@@ -7,7 +7,7 @@ Icon Action Sheet Demo
 
 # Introduction
 
-These project contains a reusable class for presenting a view that imitates that uiactionsheet in iOS. In iOS 6 the button based action sheet has been replaced in several Apple apps with an action sheet that contains friendlier space saving icons. This class allows people to easily reproduce this same control
+This project contains a reusable classes for presenting a view that imitates the uiactivityviewcontroller in iOS. In iOS 6 the button based action sheet has been replaced in several Apple apps with a controller that contains friendlier space saving icons. This class allows people to easily reproduce this same control using blocks and allows for easier customizations than the uiactivityviewcontroller.
 
 ![][1]
 
