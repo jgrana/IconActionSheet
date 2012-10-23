@@ -32,6 +32,10 @@
 
 #define kActionSheetBackground              @"action-sheet-panel.png"
 #define kActionSheetBackgroundCapHeight     30
+#define kItemSpacing    10.f
+#define kLineSpacing    25.f
+
+#define kAnimationDuration          0.4
 
 #endif
 

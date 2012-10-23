@@ -97,7 +97,7 @@ static NSString *cellIdentifier = @"ActionCell";
 {
     CGPoint center = self.center;
     center.y += self.bounds.size.height;
-    [UIView animateWithDuration:0.4
+    [UIView animateWithDuration:kAnimationDuration
                           delay:0.0
                         options:UIViewAnimationCurveEaseIn
                      animations:^{
@@ -112,12 +112,18 @@ static NSString *cellIdentifier = @"ActionCell";
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     [flowLayout setItemSize:CGSizeMake(kCellWidth, kCellHeight)];
-    [flowLayout setMinimumInteritemSpacing:10.f];
-    [flowLayout setMinimumLineSpacing:15.f];
+    [flowLayout setMinimumInteritemSpacing:kItemSpacing];
+    //Increased icon border to be close to apple implementation
+    [flowLayout setMinimumLineSpacing:kLineSpacing];
     
-    double columns = floor((self.frame.size.width-kActionSheetBorder*2) / kCellWidth);
+    double columns = floor((self.frame.size.width-kActionSheetBorder*2) / (kCellWidth+kItemSpacing));
     double rows = ceil(blocks.count / columns);
-    int flowheight = rows * (kCellHeight+10);
+    
+    //Limit maximum rows to 3
+    rows = rows > 3 ? 3 : rows;
+    
+
+    int flowheight = rows * (kCellHeight+kLineSpacing);
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(kActionSheetBorder+8, _height, self.frame.size.width-(kActionSheetBorder+8)*2,flowheight) collectionViewLayout:flowLayout];
     [self.collectionView setDataSource:self];
@@ -172,7 +178,7 @@ static NSString *cellIdentifier = @"ActionCell";
     __block CGPoint center = self.center;
     center.y -= _height + kActionSheetBounce;
     
-    [UIView animateWithDuration:0.4
+    [UIView animateWithDuration:kAnimationDuration
                           delay:0.0
                         options:UIViewAnimationCurveEaseOut
                      animations:^{
