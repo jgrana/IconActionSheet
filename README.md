@@ -1,7 +1,3 @@
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/iNjcrsi5nMUaWnoY98rBLzLn/jgrana/IconActionSheet'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/iNjcrsi5nMUaWnoY98rBLzLn/jgrana/IconActionSheet.svg' />
-</a>
-
 Icon Action Sheet Demo
 =========
 
